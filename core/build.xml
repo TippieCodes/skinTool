@@ -5,12 +5,12 @@
         <os family="windows"/>
     </condition>
 
-    <xmlproperty file="./pom.xml" prefix="pom" keeproot="false"/>
+    <xmlproperty file="pom.xml" prefix="pom" keeproot="false"/>
     <property name="version" value="${pom.version}"/>
     <property name="name" value="${pom.name}"/>
 
     <target name="Build">
-        <jar jarfile="${serverPath}\plugins\${name}-${version}-TEST.jar" basedir="./target/classes/" includes="**/*">
+        <jar jarfile="${serverPath}\plugins\${name}-${version}-TEST.jar" basedir="target/classes/" includes="**/*">
         </jar>
     </target>
 </project>

@@ -1,0 +1,4 @@
+name: Skintool
+version: ${project.version}
+main: me.tippie.skintool.Skintool
+api-version: 1.17
