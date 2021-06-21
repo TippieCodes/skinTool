@@ -5,9 +5,6 @@ api-version: 1.13
 authors: [ Tippie ]
 description: Basic tool that sets skins
 commands:
-  getskin:
-    description: Get the value and signature of a skin
-    permission: skintool.command.getskin
   saveskin:
     description: saves a skin to the local plugin storage (doesn't save on restart YET)
   setskin:
