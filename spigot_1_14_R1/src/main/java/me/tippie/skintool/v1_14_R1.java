@@ -30,4 +30,9 @@ public class v1_14_R1 implements InternalsProvider {
 		ep.playerConnection.sendPacket(exp);
 		((CraftPlayer) player).sendHealthUpdate();
 	}
+
+	@Override public MinecraftSkin getSkin(final Player player) {
+		final Property textures = ((CraftPlayer) player).getHandle().getProfile().getProperties().get("textures").iterator().next();
+		return new MinecraftSkin(textures.getValue(), textures.getSignature());
+	}
 }

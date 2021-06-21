@@ -62,7 +62,7 @@ public class MinecraftSkin {
 	 * @return the minecraft skin the player is currently wearing
 	 */
 	public static MinecraftSkin get(final Player player) {
-		return null;
+		return SkinTool.getInternals().getSkin(player);
 	}
 
 	/**

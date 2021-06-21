@@ -7,7 +7,7 @@ import java.util.logging.Level;
 
 public class SkinTool {
 	/**
-	 * Internal functions used to make the libary version compatible
+	 * Internal functions used to make the library version compatible
 	 */
 	@Getter private static InternalsProvider internals;
 
